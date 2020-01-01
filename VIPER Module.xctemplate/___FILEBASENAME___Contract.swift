@@ -9,13 +9,13 @@
 import Foundation
 
 
-// MARK: View Input (Presenter -> View)
+// MARK: View Output (Presenter -> View)
 protocol PresenterToView___VARIABLE_ModuleName___Protocol {
    
 }
 
 
-// MARK: View Output (View -> Presenter)
+// MARK: View Input (View -> Presenter)
 protocol ViewToPresenter___VARIABLE_ModuleName___Protocol {
     
     var view: PresenterToView___VARIABLE_ModuleName___Protocol? { get set }
