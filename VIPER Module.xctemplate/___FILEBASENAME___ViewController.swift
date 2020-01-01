@@ -6,7 +6,6 @@
 //  ___COPYRIGHT___
 //
 
-import Foundation
 import UIKit
 
 class ___VARIABLE_ModuleName___ViewController: UIViewController {
