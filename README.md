@@ -1,4 +1,4 @@
-# ViperTemplate
+# VIPER Template
 Xcode File Template for generating VIPER modules: View, Interactor, Presenter, and Router. Written in Swift 5
 
 # How To Install
