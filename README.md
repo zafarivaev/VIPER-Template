@@ -22,13 +22,13 @@ Let's suppose we wanted to create the Auth module. Here's how it would look:
 import Foundation
 
 
-// MARK: View Input (Presenter -> View)
+// MARK: View Output (Presenter -> View)
 protocol PresenterToViewAuthProtocol {
    
 }
 
 
-// MARK: View Output (View -> Presenter)
+// MARK: View Input (View -> Presenter)
 protocol ViewToPresenterAuthProtocol {
     
     var view: PresenterToViewAuthProtocol? { get set }
