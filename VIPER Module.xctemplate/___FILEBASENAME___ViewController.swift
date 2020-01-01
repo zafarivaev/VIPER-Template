@@ -9,14 +9,14 @@
 import UIKit
 
 class ___VARIABLE_ModuleName___ViewController: UIViewController {
-
-    // MARK: - Properties
-    var presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol?
-
+    
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    // MARK: - Properties
+    var presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol?
     
 }
 

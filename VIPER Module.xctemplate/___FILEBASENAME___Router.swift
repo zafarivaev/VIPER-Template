@@ -10,18 +10,21 @@ import Foundation
 import UIKit
 
 class ___VARIABLE_ModuleName___Router: PresenterToRouter___VARIABLE_ModuleName___Protocol {
-
+    
     // MARK: Static methods
-    static func createModule(vc: ___VARIABLE_ModuleName___ViewController) {
+    static func createModule() -> UIViewController {
+        
+        let viewController = ___VARIABLE_ModuleName___ViewController()
         
         let presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol & InteractorToPresenter___VARIABLE_ModuleName___Protocol = ___VARIABLE_ModuleName___Presenter()
         
-        vc.presenter = presenter
-        vc.presenter?.router = ___VARIABLE_ModuleName___Router()
-        vc.presenter?.view = vc
-        vc.presenter?.interactor = ___VARIABLE_ModuleName___Interactor()
+        viewController.presenter = presenter
+        viewController.presenter?.router = ___VARIABLE_ModuleName___Router()
+        viewController.presenter?.view = viewController
+        viewController.presenter?.interactor = ___VARIABLE_ModuleName___Interactor()
+        viewController.presenter?.interactor?.presenter = presenter
         
-        vc.presenter?.interactor?.presenter = presenter
+        return viewController
     }
     
 }
