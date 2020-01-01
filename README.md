@@ -118,16 +118,19 @@ import UIKit
 class AuthRouter: PresenterToRouterAuthProtocol {
 
     // MARK: Static methods
-    static func createModule(vc: AuthViewController) {
+    static func createModule() -> UIViewController {
         
-        let presenter: ViewToPresenterAuthProtocol & InteractorToPresenterAuthProtocol = AuthPresenter()
+        let viewController = AuthViewController()
         
-        vc.presenter = presenter
-        vc.presenter?.router = AuthRouter()
-        vc.presenter?.view = vc
-        vc.presenter?.interactor = AuthInteractor()
+        let presenter: ViewToPresenterQuotesProtocol & InteractorToPresenterQuotesProtocol = AuthPresenter()
         
-        vc.presenter?.interactor?.presenter = presenter
+        viewController.presenter = presenter
+        viewController.presenter?.router = AuthRouter()
+        viewController.presenter?.view = viewController
+        viewController.presenter?.interactor = AuthInteractor()
+        viewController.presenter?.interactor?.presenter = presenter
+        
+        return viewController
     }
     
 }
