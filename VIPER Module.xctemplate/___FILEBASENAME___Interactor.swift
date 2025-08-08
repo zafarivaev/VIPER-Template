@@ -11,5 +11,5 @@ import Foundation
 class ___VARIABLE_ModuleName___Interactor: PresenterToInteractor___VARIABLE_ModuleName___Protocol {
 
     // MARK: Properties
-    var presenter: InteractorToPresenter___VARIABLE_ModuleName___Protocol?
+    weak var presenter: InteractorToPresenter___VARIABLE_ModuleName___Protocol?
 }

@@ -10,13 +10,13 @@ import Foundation
 
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToView___VARIABLE_ModuleName___Protocol {
+protocol PresenterToView___VARIABLE_ModuleName___Protocol: AnyObject {
    
 }
 
 
 // MARK: View Input (View -> Presenter)
-protocol ViewToPresenter___VARIABLE_ModuleName___Protocol {
+protocol ViewToPresenter___VARIABLE_ModuleName___Protocol: AnyObject {
     
     var view: PresenterToView___VARIABLE_ModuleName___Protocol? { get set }
     var interactor: PresenterToInteractor___VARIABLE_ModuleName___Protocol? { get set }
@@ -32,7 +32,7 @@ protocol PresenterToInteractor___VARIABLE_ModuleName___Protocol {
 
 
 // MARK: Interactor Output (Interactor -> Presenter)
-protocol InteractorToPresenter___VARIABLE_ModuleName___Protocol {
+protocol InteractorToPresenter___VARIABLE_ModuleName___Protocol: AnyObject {
     
 }
 
